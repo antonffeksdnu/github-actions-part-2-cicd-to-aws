@@ -3,8 +3,9 @@
 #
 # Version      Date        Info
 # 1.0          2019        Initial Version
-#
-# Made by Denis Astahov ADV-IT Copyleft (c) 2019
+# 2.0          2022        Clone old and recreate from adv-it
+
+# Made by Anton Zverev antonffeksdnu Copyleft (c) 2022
 #---------------------------------------------------------------------
 name: CI-CD-Pipeline-to-AWS-ElasticBeastalk
 env:
@@ -12,7 +13,7 @@ env:
   EB_APPLICATION_NAME       : "MyFlask"
   EB_ENVIRONMENT_NAME       : "MyFlask-env"
   DEPLOY_PACKAGE_NAME       : "flask_app_${{ github.sha }}.zip"
-  AWS_REGION_NAME           : "us-west-2"
+  AWS_REGION_NAME           : "us-east-1"
 
 on: 
   push:
