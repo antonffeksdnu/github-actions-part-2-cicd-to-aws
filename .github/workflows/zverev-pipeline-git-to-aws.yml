@@ -68,7 +68,7 @@ jobs:
     - name: Deploy new ElasticBeanstalk My Application Version
       run : aws elasticbeanstalk update-environment --environment-name ${{ env.EB_ENVIRONMENT_NAME }} --version-label "Version-${{ github.sha }}"
       
-    - name: Print Happy Message for CD finish
+    - name: Print Happy Message for CD finishing
       run : echo "CD Pipeline part Finished successfully!"
 
 
